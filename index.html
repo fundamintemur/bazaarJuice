@@ -10,20 +10,20 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Montserrat:wght@700;900&family=Poppins:wght@400;500;600;700&family=Sora:wght@700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Montserrat:wght@700;900&family=Poppins:wght@400;500;600;700&family=Sora:wght@700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Montserrat:wght@700;900&family=Poppins:wght@400;500;600;700&family=Sora:wght@700;800;900&display=swap"></noscript>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
      
-  <!-- "size" değil "sizes", "*" değil "x" -->
-<link rel="icon" type="image/png" sizes="32x32" href="/src/public/favicon_round_512.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/src/public/favicon_round_512.png">
-<link rel="shortcut icon" href="/src/public/favicon_round_512.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/src/public/favicon_round_512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/src/public/favicon_round_512.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/src/public/favicon_round_512.png">
+  <link rel="shortcut icon" href="/src/public/favicon_round_512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/src/public/favicon_round_512.png">
+
     <style>
       /* =========================================================
         BAZAAR JUICE — ELEGANT BUSINESS THEME (MOBILE FIRST)
@@ -2113,8 +2113,6 @@
         }
       }
     </style>
-
-
   </head>
 
   <body>
@@ -2170,12 +2168,14 @@
     <section id="hero" class="hero">
       <div class="video-background-wrapper">
         <iframe
-          src="https://player.vimeo.com/video/1135227451?h=4c0c598075&autoplay=1&loop=1&autopause=0&muted=1&background=1"
+          src="about:blank"
+          data-src="https://player.vimeo.com/video/1135227451?h=4c0c598075&autoplay=1&loop=1&autopause=0&muted=1&background=1"
           frameborder="0"
           allow="autoplay; fullscreen; picture-in-picture"
           allowfullscreen
           playsinline
           class="hero-video-iframe"
+          id="heroVideoIframe"
         ></iframe>
       </div>
 
@@ -2206,84 +2206,84 @@
         <div class="row g-3 mt-4">
           <div class="col-6 col-md-4 col-lg-3">
             <div class="fruit-card d-flex align-items-center">
-              <img src="src/public/blackberry.png" class="fruit-img" alt="Blackberry"/>
+              <img src="src/public/blackberry.png" class="fruit-img" alt="Blackberry" loading="lazy"/>
               <span class="fruit-name">BLACKBERRY</span>
             </div>
           </div>
 
           <div class="col-6 col-md-4 col-lg-3">
             <div class="fruit-card d-flex align-items-center">
-              <img src="src/public/blueberry.png" class="fruit-img" alt="Blueberry"/>
+              <img src="src/public/blueberry.png" class="fruit-img" alt="Blueberry" loading="lazy"/>
               <span class="fruit-name">BLUEBERRY</span>
             </div>
           </div>
 
           <div class="col-6 col-md-4 col-lg-3">
             <div class="fruit-card d-flex align-items-center">
-              <img src="src/public/grapes.png" class="fruit-img" alt="Grapes"/>
+              <img src="src/public/grapes.png" class="fruit-img" alt="Grapes" loading="lazy"/>
               <span class="fruit-name">GRAPES</span>
             </div>
           </div>
 
           <div class="col-6 col-md-4 col-lg-3">
             <div class="fruit-card d-flex align-items-center">
-              <img src="src/public/banana.png" class="fruit-img" alt="Banana"/>
+              <img src="src/public/banana.png" class="fruit-img" alt="Banana" loading="lazy"/>
               <span class="fruit-name">BANANA</span>
             </div>
           </div>
 
           <div class="col-6 col-md-4 col-lg-3">
             <div class="fruit-card d-flex align-items-center">
-              <img src="src/public/mangoo.png" class="fruit-img" alt="Mango"/>
+              <img src="src/public/mangoo.png" class="fruit-img" alt="Mango" loading="lazy"/>
               <span class="fruit-name">MANGO</span>
             </div>
           </div>
 
           <div class="col-6 col-md-4 col-lg-3">
             <div class="fruit-card d-flex align-items-center">
-              <img src="src/public/watermeloon.png" class="fruit-img" alt="Watermelon"/>
+              <img src="src/public/watermeloon.png" class="fruit-img" alt="Watermelon" loading="lazy"/>
               <span class="fruit-name">WATERMELON</span>
             </div>
           </div>
 
           <div class="col-6 col-md-4 col-lg-3">
             <div class="fruit-card d-flex align-items-center">
-              <img src="src/public/strawberry.png" class="fruit-img" alt="Strawberry"/>
+              <img src="src/public/strawberry.png" class="fruit-img" alt="Strawberry" loading="lazy"/>
               <span class="fruit-name">STRAWBERRY</span>
             </div>
           </div>
 
           <div class="col-6 col-md-4 col-lg-3">
             <div class="fruit-card d-flex align-items-center">
-              <img src="src/public/orangee.png" class="fruit-img" alt="Orange"/>
+              <img src="src/public/orangee.png" class="fruit-img" alt="Orange" loading="lazy"/>
               <span class="fruit-name">ORANGE</span>
             </div>
           </div>
 
           <div class="col-6 col-md-4 col-lg-3">
             <div class="fruit-card d-flex align-items-center">
-              <img src="src/public/kiwi.png" class="fruit-img" alt="Kiwi"/>
+              <img src="src/public/kiwi.png" class="fruit-img" alt="Kiwi" loading="lazy"/>
               <span class="fruit-name">KIWI</span>
             </div>
           </div>
 
           <div class="col-6 col-md-4 col-lg-3">
             <div class="fruit-card d-flex align-items-center">
-              <img src="src/public/meloon.png" class="fruit-img" alt="Melon"/>
+              <img src="src/public/meloon.png" class="fruit-img" alt="Melon" loading="lazy"/>
               <span class="fruit-name">MELON</span>
             </div>
           </div>
 
           <div class="col-6 col-md-4 col-lg-3">
             <div class="fruit-card d-flex align-items-center">
-              <img src="src/public/pineapple.png" class="fruit-img" alt="Pineapple"/>
+              <img src="src/public/pineapple.png" class="fruit-img" alt="Pineapple" loading="lazy"/>
               <span class="fruit-name">PINEAPPLE</span>
             </div>
           </div>
 
           <div class="col-6 col-md-4 col-lg-3">
             <div class="fruit-card d-flex align-items-center">
-              <img src="src/public/applee.png" class="fruit-img" alt="Apple"/>
+              <img src="src/public/applee.png" class="fruit-img" alt="Apple" loading="lazy"/>
               <span class="fruit-name">APPLE</span>
             </div>
           </div>
@@ -2300,44 +2300,32 @@
         </div>
 
         <div class="custom-grid">
-          <!-- <div class="custom-card">
-            <div class="image-box"><img src="src/public/fruit-bowl.png" alt="Create Your Own Fruit Bowl"></div>
-            <div class="custom-info">
-              <span class="custom-name">Create Your Own Fruit Bowl</span>
-              <p class="custom-desc">Choose any fruit to mix. Freshly sliced and made your way.</p>
-            </div>
-          </div> -->
-
           <div class="custom-card">
-            <div class="image-box"><img src="src/public/soomothie.png" alt="Smoothie"></div>
+            <div class="image-box"><img src="src/public/soomothie.png" alt="Smoothie" loading="lazy"></div>
             <div class="custom-info">
               <span class="custom-name">Smoothie</span>
               <p class="custom-desc">Fresh organic fruits blended on the spot — clean energy, real taste.</p>
             </div>
           </div>
 
-           <div class="custom-card">
-            <div class="image-box"><img src="src/public/bobaSmoothie.png" alt="Smoothie"></div>
+          <div class="custom-card">
+            <div class="image-box"><img src="src/public/bobaSmoothie.png" alt="Boba Smoothie" loading="lazy"></div>
             <div class="custom-info">
               <span class="custom-name">Boba Smoothie</span>
-              <p class="custom-desc">Strawberry,mango & banana options</p>
+              <p class="custom-desc">Strawberry, mango &amp; banana options</p>
             </div>
           </div>
 
-        
-
           <div class="custom-card">
-            <div class="image-box"><img src="src/public/acai.png" alt="Acai Bowl"></div>
+            <div class="image-box"><img src="src/public/acai.png" alt="Acai Bowl" loading="lazy"></div>
             <div class="custom-info">
               <span class="custom-name">Original Acai Bowl</span>
               <p class="custom-desc">Pure açaí base + fresh organic fruit + crunchy granola — simple &amp; powerful.</p>
             </div>
           </div>
 
-        
-
           <div class="custom-card">
-            <div class="image-box"><img src="src/public/freshYogurtBowl.png" alt="Yoghurt Bowl"></div>
+            <div class="image-box"><img src="src/public/freshYogurtBowl.png" alt="Yoghurt Bowl" loading="lazy"></div>
             <div class="custom-info">
               <span class="custom-name">Yoghurt Bowl</span>
               <p class="custom-desc">Creamy, refreshing bowl topped with bright organic fruit — feel-good and filling.</p>
@@ -2345,21 +2333,23 @@
           </div>
 
           <div class="custom-card">
-            <div class="image-box"><img src="src/public/IceCream.png" alt="Ice Cream Fruit Bowl"></div>
+            <div class="image-box"><img src="src/public/IceCream.png" alt="Ice Cream Fruit Bowl" loading="lazy"></div>
             <div class="custom-info">
               <span class="custom-name">Ice Cream Fruit Bowl</span>
-              <p class="custom-desc">Fresh fruits topped with creamy şe cream and sweet indulgence.</p>
+              <p class="custom-desc">Fresh fruits topped with creamy ice cream and sweet indulgence.</p>
             </div>
           </div>
-           <div class="custom-card">
-            <div class="image-box"><img src="src/public/sundae.png" alt="Ice Cream Fruit Bowl"></div>
+
+          <div class="custom-card">
+            <div class="image-box"><img src="src/public/sundae.png" alt="Sundae" loading="lazy"></div>
             <div class="custom-info">
               <span class="custom-name">Sundae</span>
-              <p class="custom-desc">Classic ice cream sundae topped with strawberry,Chocolate and caramel sauces.</p>
+              <p class="custom-desc">Classic ice cream sundae topped with strawberry, chocolate and caramel sauces.</p>
             </div>
           </div>
+
           <div class="custom-card">
-            <div class="image-box"><img src="src/public/soft-serve-cone.png" alt="Soft Serve Cone"></div>
+            <div class="image-box"><img src="src/public/soft-serve-cone.png" alt="Soft Serve Cone" loading="lazy"></div>
             <div class="custom-info">
               <span class="custom-name">Soft Serve Cone</span>
               <p class="custom-desc">Creamy soft serve — smooth, classic, and always fresh.</p>
@@ -2369,8 +2359,8 @@
       </div>
     </section>
 
-    <!-- TOASTS -->
-    <!-- <section id="menu-toasts" class="toast-section">
+    <!-- TOASTS
+    <section id="menu-toasts" class="toast-section">
       <div class="container">
         <div class="toast-header">
           <h2 class="section-title">Signature Toasts</h2>
@@ -2379,37 +2369,37 @@
 
         <div class="toast-grid">
           <div class="toast-card">
-            <div class="image-box"><img src="src/public/toast-fig.png" alt="Fig Spread & Cream Cheese"></div>
+            <div class="image-box"><img src="src/public/toast-fig.png" alt="Fig Spread & Cream Cheese" loading="lazy"></div>
             <div class="toast-info"><span class="toast-name">Fig Spread & Cream Cheese</span></div>
           </div>
 
           <div class="toast-card">
-            <div class="image-box"><img src="src/public/toast-berry.png" alt="Blueberry & Pomegranate"></div>
+            <div class="image-box"><img src="src/public/toast-berry.png" alt="Blueberry & Pomegranate" loading="lazy"></div>
             <div class="toast-info"><span class="toast-name">Blueberry & Pomegranate</span></div>
           </div>
 
           <div class="toast-card">
-            <div class="image-box"><img src="src/public/toast-avocado.png" alt="Avocado Cream Cheese"></div>
+            <div class="image-box"><img src="src/public/toast-avocado.png" alt="Avocado Cream Cheese" loading="lazy"></div>
             <div class="toast-info"><span class="toast-name">Avocado Cream Cheese</span></div>
           </div>
 
           <div class="toast-card">
-            <div class="image-box"><img src="src/public/toast-blueberries.png" alt="Blueberry Chocolate"></div>
+            <div class="image-box"><img src="src/public/toast-blueberries.png" alt="Blueberry Chocolate" loading="lazy"></div>
             <div class="toast-info"><span class="toast-name">Blueberry Chocolate</span></div>
           </div>
 
           <div class="toast-card">
-            <div class="image-box"><img src="src/public/toast-tomato.png" alt="Tomato Cream Cheese"></div>
+            <div class="image-box"><img src="src/public/toast-tomato.png" alt="Tomato Cream Cheese" loading="lazy"></div>
             <div class="toast-info"><span class="toast-name">Tomato Cream Cheese</span></div>
           </div>
 
           <div class="toast-card">
-            <div class="image-box"><img src="src/public/toast-banana.png" alt="Banana Chocolate"></div>
+            <div class="image-box"><img src="src/public/toast-banana.png" alt="Banana Chocolate" loading="lazy"></div>
             <div class="toast-info"><span class="toast-name">Banana Chocolate</span></div>
           </div>
 
           <div class="toast-card">
-            <div class="image-box"><img src="src/public/toast-apple.png" alt="Apple Peanut Butter"></div>
+            <div class="image-box"><img src="src/public/toast-apple.png" alt="Apple Peanut Butter" loading="lazy"></div>
             <div class="toast-info"><span class="toast-name">Apple Peanut Butter</span></div>
           </div>
         </div>
@@ -2430,7 +2420,7 @@
                   <p class="text-muted">Great for energy, workouts, and natural fuel.</p>
                 </div>
                 <div class="menu-item-image-wrapper">
-                  <img src="src/public/banana-mango-pineapple.png" alt="Banana Mango Pineapple" />
+                  <img src="src/public/banana-mango-pineapple.png" alt="Banana Mango Pineapple"  loading="lazy"/>
                 </div>
               </div>
             </div>
@@ -2442,7 +2432,7 @@
                   <p class="text-muted">Sweet, filling, and kid-friendly.</p>
                 </div>
                 <div class="menu-item-image-wrapper">
-                  <img src="src/public/banana-strawberry.png" alt="Banana Strawberry" />
+                  <img src="src/public/banana-strawberry.png" alt="Banana Strawberry"  loading="lazy"/>
                 </div>
               </div>
             </div>
@@ -2454,7 +2444,7 @@
                   <p class="text-muted">High in antioxidants. Supports immunity.</p>
                 </div>
                 <div class="menu-item-image-wrapper">
-                  <img src="src/public/banana-strawberry-blueberry-dragonfruit.png" alt="Banana Strawberry Blueberry Dragonfruit" />
+                  <img src="src/public/banana-strawberry-blueberry-dragonfruit.png" alt="Banana Strawberry Blueberry Dragonfruit"  loading="lazy"/>
                 </div>
               </div>
             </div>
@@ -2466,7 +2456,7 @@
                   <p class="text-muted">Balanced nutrients for everyday snacking.</p>
                 </div>
                 <div class="menu-item-image-wrapper">
-                  <img src="src/public/banana-strawberry-apple-blueberry.png" alt="Banana Strawberry Apple Blueberry" />
+                  <img src="src/public/banana-strawberry-apple-blueberry.png" alt="Banana Strawberry Apple Blueberry"  loading="lazy"/>
                 </div>
               </div>
             </div>
@@ -2478,7 +2468,7 @@
                   <p class="text-muted">High fiber. Great for digestion.</p>
                 </div>
                 <div class="menu-item-image-wrapper">
-                  <img src="src/public/banana-strawberry-apple-dragonfruit-raspberry.png" alt="Banana Strawberry Apple Dragonfruit Raspberry" />
+                  <img src="src/public/banana-strawberry-apple-dragonfruit-raspberry.png" alt="Banana Strawberry Apple Dragonfruit Raspberry"  loading="lazy"/>
                 </div>
               </div>
             </div>
@@ -2490,7 +2480,7 @@
                   <p class="text-muted">Vitamin C rich. Supports skin and immunity.</p>
                 </div>
                 <div class="menu-item-image-wrapper">
-                  <img src="src/public/orange-kiwi-apple-blueberry.png" alt="Orange Kiwi Apple Blueberry" />
+                  <img src="src/public/orange-kiwi-apple-blueberry.png" alt="Orange Kiwi Apple Blueberry"  loading="lazy"/>
                 </div>
               </div>
             </div>
@@ -2502,7 +2492,7 @@
                   <p class="text-muted">Refreshing and hydrating.</p>
                 </div>
                 <div class="menu-item-image-wrapper">
-                  <img src="src/public/orange.png" alt="Orange" />
+                  <img src="src/public/orange.png" alt="Orange"  loading="lazy"/>
                 </div>
               </div>
             </div>
@@ -2514,7 +2504,7 @@
                   <p class="text-muted">Sweet tropical blend. Mood booster.</p>
                 </div>
                 <div class="menu-item-image-wrapper">
-                  <img src="src/public/mango-pineapple-strawberry.png" alt="Mango Pineapple Strawberry" />
+                  <img src="src/public/mango-pineapple-strawberry.png" alt="Mango Pineapple Strawberry"  loading="lazy"/>
                 </div>
               </div>
             </div>
@@ -2526,7 +2516,7 @@
                   <p class="text-muted">Naturally sweet. Energy support.</p>
                 </div>
                 <div class="menu-item-image-wrapper">
-                  <img src="src/public/mango.png" alt="Mango" />
+                  <img src="src/public/mango.png" alt="Mango"  loading="lazy"/>
                 </div>
               </div>
             </div>
@@ -2538,7 +2528,7 @@
                   <p class="text-muted">Ultra-hydrating. Perfect for hot days.</p>
                 </div>
                 <div class="menu-item-image-wrapper">
-                  <img src="src/public/watermelon.png" alt="Watermelon" />
+                  <img src="src/public/watermelon.png" alt="Watermelon"  loading="lazy"/>
                 </div>
               </div>
             </div>
@@ -2550,7 +2540,7 @@
                   <p class="text-muted">Light, refreshing, and easy to digest.</p>
                 </div>
                 <div class="menu-item-image-wrapper">
-                  <img src="src/public/melon.png" alt="Melon" />
+                  <img src="src/public/melon.png" alt="Melon"  loading="lazy"/>
                 </div>
               </div>
             </div>
@@ -2562,7 +2552,7 @@
                   <p class="text-muted">Classic fruits. Good for gut health.</p>
                 </div>
                 <div class="menu-item-image-wrapper">
-                  <img src="src/public/apple-peach.png" alt="Apple Peach" />
+                  <img src="src/public/apple-peach.png" alt="Apple Peach"  loading="lazy"/>
                 </div>
               </div>
             </div>
@@ -2574,7 +2564,7 @@
                   <p class="text-muted">Refreshing with a citrus kick.</p>
                 </div>
                 <div class="menu-item-image-wrapper">
-                  <img src="src/public/grape-orange-kiwi.png" alt="Grape Orange Kiwi" />
+                  <img src="src/public/grape-orange-kiwi.png" alt="Grape Orange Kiwi"  loading="lazy"/>
                 </div>
               </div>
             </div>
@@ -2586,7 +2576,7 @@
                   <p class="text-muted">Antioxidant-rich. Immune support.</p>
                 </div>
                 <div class="menu-item-image-wrapper">
-                  <img src="src/public/orange-dragonfruit-pomegranate.png" alt="Orange Dragonfruit Pomegranate" />
+                  <img src="src/public/orange-dragonfruit-pomegranate.png" alt="Orange Dragonfruit Pomegranate"  loading="lazy"/>
                 </div>
               </div>
             </div>
@@ -2598,7 +2588,7 @@
                   <p class="text-muted">Sweet and juicy crowd favorite.</p>
                 </div>
                 <div class="menu-item-image-wrapper">
-                  <img src="src/public/mango-strawberry.png" alt="Mango Strawberry" />
+                  <img src="src/public/mango-strawberry.png" alt="Mango Strawberry"  loading="lazy"/>
                 </div>
               </div>
             </div>
@@ -2610,7 +2600,7 @@
                   <p class="text-muted">Crunchy and fiber-rich.</p>
                 </div>
                 <div class="menu-item-image-wrapper">
-                  <img src="src/public/apple.png" alt="Apple" />
+                  <img src="src/public/apple.png" alt="Apple"  loading="lazy"/>
                 </div>
               </div>
             </div>
@@ -2630,50 +2620,45 @@
         <div class="drinks-grid">
           <div class="drink-card">
             <div class="drink-image-box">
-              <img src="src/public/icedCoffee.png" class="drink-img" alt="Iced Coffee" />
+              <img src="src/public/icedCoffee.png" class="drink-img" alt="Iced Coffee" loading="lazy" />
             </div>
             <div class="drink-info"><span class="drink-name">Iced Coffee</span></div>
           </div>
 
           <div class="drink-card">
             <div class="drink-image-box">
-              <img src="src/public/hotChocalatte.png" class="drink-img"   alt="Hot Chocolate" />
+              <img src="src/public/hotChocalatte.png" class="drink-img" alt="Hot Chocolate" loading="lazy" />
             </div>
             <div class="drink-info"><span class="drink-name">Hot Chocolate</span></div>
           </div>
 
           <div class="drink-card">
             <div class="drink-image-box">
-              <img src="src/public/IcedMatcha.png" class="drink-img" alt="Iced Matcha Latte" />
+              <img src="src/public/IcedMatcha.png" class="drink-img" alt="Iced Matcha Latte" loading="lazy" />
             </div>
             <div class="drink-info"><span class="drink-name">Iced Matcha Latte</span></div>
           </div>
 
           <div class="drink-card">
             <div class="drink-image-box">
-              <img src="src/public/bananaCoffe.png" class="drink-img" alt="Banana Latte" />
+              <img src="src/public/bananaCoffe.png" class="drink-img" alt="Banana Coffee Latte" loading="lazy" />
             </div>
             <div class="drink-info"><span class="drink-name">Banana Coffee Latte</span></div>
           </div>
-           <div class="drink-card">
+
+          <div class="drink-card">
             <div class="drink-image-box">
-              <img src="src/public/hotCoffee.png" class="drink-img" alt="Ice Cream Coffee" />
+              <img src="src/public/hotCoffee.png" class="drink-img" alt="Hot Coffee" loading="lazy" />
             </div>
             <div class="drink-info"><span class="drink-name">Hot Coffee</span></div>
           </div>
+
           <div class="drink-card">
             <div class="drink-image-box">
-              <img src="src/public/espresso.png" class="drink-img" alt="Ice Cream Coffee" />
+              <img src="src/public/espresso.png" class="drink-img" alt="Espresso" loading="lazy" />
             </div>
             <div class="drink-info"><span class="drink-name">Espresso</span></div>
           </div>
-
-          <!-- <div class="drink-card">
-            <div class="drink-image-box">
-              <img src="src/public/icecreamcofee.png" class="drink-img" alt="Ice Cream Coffee" />
-            </div>
-            <div class="drink-info"><span class="drink-name">Ice Cream Coffee</span></div>
-          </div> -->
         </div>
       </div>
     </section>
@@ -2714,7 +2699,7 @@
                   src="src/public/as.png"
                   alt="LED Tumbler"
                   class="led-tumbler-img"
-                />
+                 loading="lazy"/>
               </div>
 
               <p class="mb-1 fw-bold">Glow up your drink!</p>
@@ -2726,8 +2711,8 @@
       </div>
     </section>
 
-    <!-- BOOSTERS -->
-    <!-- <section id="menu-boosters">
+    <!-- BOOSTERS
+    <section id="menu-boosters">
       <div class="container py-5">
         <h3 class="section-title text-center mb-4">BOOSTERS & SPECIAL ADD-ONS</h3>
 
@@ -2797,7 +2782,7 @@
             <a href="#hero">Home</a>
             <a href="#menu-fruits">Bazaar Fruit Selection</a>
             <a href="#menu-custom">Create Your Own</a>
-            <!-- <a href="#menu-toasts">Toasts</a> -->
+            <a href="#menu-toasts">Toasts</a>
             <a href="#fruit-cups-section">Fruit Bowls & Smoothies</a>
             <a href="#menu-drinks">Drinks</a>
             <a href="#menu-merch">Merch</a>
@@ -2840,6 +2825,20 @@
       </div>
     </footer>
 
+    <script>
+      // Vimeo videoyu sayfa yüklendikten sonra baslat (performans)
+      function loadHeroVideo() {
+        var iframe = document.getElementById("heroVideoIframe");
+        if (iframe && iframe.dataset.src) {
+          iframe.src = iframe.dataset.src;
+        }
+      }
+      if (document.readyState === "complete") {
+        setTimeout(loadHeroVideo, 200);
+      } else {
+        window.addEventListener("load", function() { setTimeout(loadHeroVideo, 200); });
+      }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
